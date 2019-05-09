@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9FAB43C2284762200255B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB43B2284762200255B77 /* AppDelegate.swift */; };
+		F9FAB43E2284762200255B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB43D2284762200255B77 /* ViewController.swift */; };
+		F9FAB4412284762200255B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB43F2284762200255B77 /* Main.storyboard */; };
+		F9FAB4432284762400255B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB4422284762400255B77 /* Assets.xcassets */; };
+		F9FAB4462284762400255B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB4442284762400255B77 /* LaunchScreen.storyboard */; };
+		F9FAB4512284762400255B77 /* Daft_CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9FAB44D2284762400255B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9FAB4302284762200255B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9FAB4372284762200255B77;
+			remoteInfo = "Daft Countries";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9FAB4382284762200255B77 /* Daft Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daft Countries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FAB43B2284762200255B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9FAB43D2284762200255B77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9FAB4402284762200255B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9FAB4422284762400255B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9FAB4452284762400255B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9FAB4472284762400255B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FAB44C2284762400255B77 /* Daft CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daft CountriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daft_CountriesTests.swift; sourceTree = "<group>"; };
+		F9FAB4522284762400255B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9FAB4352284762200255B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FAB4492284762400255B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9FAB42F2284762200255B77 = {
+			isa = PBXGroup;
+			children = (
+				F9FAB43A2284762200255B77 /* Daft Countries */,
+				F9FAB44F2284762400255B77 /* Daft CountriesTests */,
+				F9FAB4392284762200255B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9FAB4392284762200255B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB4382284762200255B77 /* Daft Countries.app */,
+				F9FAB44C2284762400255B77 /* Daft CountriesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9FAB43A2284762200255B77 /* Daft Countries */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB43B2284762200255B77 /* AppDelegate.swift */,
+				F9FAB43D2284762200255B77 /* ViewController.swift */,
+				F9FAB43F2284762200255B77 /* Main.storyboard */,
+				F9FAB4422284762400255B77 /* Assets.xcassets */,
+				F9FAB4442284762400255B77 /* LaunchScreen.storyboard */,
+				F9FAB4472284762400255B77 /* Info.plist */,
+			);
+			path = "Daft Countries";
+			sourceTree = "<group>";
+		};
+		F9FAB44F2284762400255B77 /* Daft CountriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */,
+				F9FAB4522284762400255B77 /* Info.plist */,
+			);
+			path = "Daft CountriesTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9FAB4372284762200255B77 /* Daft Countries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9FAB4552284762400255B77 /* Build configuration list for PBXNativeTarget "Daft Countries" */;
+			buildPhases = (
+				F9FAB4342284762200255B77 /* Sources */,
+				F9FAB4352284762200255B77 /* Frameworks */,
+				F9FAB4362284762200255B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daft Countries";
+			productName = "Daft Countries";
+			productReference = F9FAB4382284762200255B77 /* Daft Countries.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9FAB44B2284762400255B77 /* Daft CountriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9FAB4582284762400255B77 /* Build configuration list for PBXNativeTarget "Daft CountriesTests" */;
+			buildPhases = (
+				F9FAB4482284762400255B77 /* Sources */,
+				F9FAB4492284762400255B77 /* Frameworks */,
+				F9FAB44A2284762400255B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9FAB44E2284762400255B77 /* PBXTargetDependency */,
+			);
+			name = "Daft CountriesTests";
+			productName = "Daft CountriesTests";
+			productReference = F9FAB44C2284762400255B77 /* Daft CountriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9FAB4302284762200255B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Karol Struniawski";
+				TargetAttributes = {
+					F9FAB4372284762200255B77 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F9FAB44B2284762400255B77 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F9FAB4372284762200255B77;
+					};
+				};
+			};
+			buildConfigurationList = F9FAB4332284762200255B77 /* Build configuration list for PBXProject "Daft Countries" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9FAB42F2284762200255B77;
+			productRefGroup = F9FAB4392284762200255B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9FAB4372284762200255B77 /* Daft Countries */,
+				F9FAB44B2284762400255B77 /* Daft CountriesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9FAB4362284762200255B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FAB4462284762400255B77 /* LaunchScreen.storyboard in Resources */,
+				F9FAB4432284762400255B77 /* Assets.xcassets in Resources */,
+				F9FAB4412284762200255B77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FAB44A2284762400255B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9FAB4342284762200255B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FAB43E2284762200255B77 /* ViewController.swift in Sources */,
+				F9FAB43C2284762200255B77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9FAB4482284762400255B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FAB4512284762400255B77 /* Daft_CountriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9FAB44E2284762400255B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9FAB4372284762200255B77 /* Daft Countries */;
+			targetProxy = F9FAB44D2284762400255B77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9FAB43F2284762200255B77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9FAB4402284762200255B77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9FAB4442284762400255B77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9FAB4452284762400255B77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9FAB4532284762400255B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9FAB4542284762400255B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9FAB4562284762400255B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24C92L3HM3;
+				INFOPLIST_FILE = "Daft Countries/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Karol-Struniawski.Daft-Countries";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9FAB4572284762400255B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24C92L3HM3;
+				INFOPLIST_FILE = "Daft Countries/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Karol-Struniawski.Daft-Countries";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9FAB4592284762400255B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24C92L3HM3;
+				INFOPLIST_FILE = "Daft CountriesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Karol-Struniawski.Daft-CountriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daft Countries.app/Daft Countries";
+			};
+			name = Debug;
+		};
+		F9FAB45A2284762400255B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24C92L3HM3;
+				INFOPLIST_FILE = "Daft CountriesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Karol-Struniawski.Daft-CountriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daft Countries.app/Daft Countries";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9FAB4332284762200255B77 /* Build configuration list for PBXProject "Daft Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FAB4532284762400255B77 /* Debug */,
+				F9FAB4542284762400255B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FAB4552284762400255B77 /* Build configuration list for PBXNativeTarget "Daft Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FAB4562284762400255B77 /* Debug */,
+				F9FAB4572284762400255B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9FAB4582284762400255B77 /* Build configuration list for PBXNativeTarget "Daft CountriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9FAB4592284762400255B77 /* Debug */,
+				F9FAB45A2284762400255B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9FAB4302284762200255B77 /* Project object */;
+}
