@@ -13,6 +13,13 @@
 		F9FAB4432284762400255B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB4422284762400255B77 /* Assets.xcassets */; };
 		F9FAB4462284762400255B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB4442284762400255B77 /* LaunchScreen.storyboard */; };
 		F9FAB4512284762400255B77 /* Daft_CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */; };
+		F9FAB45F228476AE00255B77 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB45E228476AE00255B77 /* Country.swift */; };
+		F9FAB464228478A600255B77 /* CountriesProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB463228478A600255B77 /* CountriesProviding.swift */; };
+		F9FAB46822847AE600255B77 /* CountriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB46722847AE600255B77 /* CountriesProvider.swift */; };
+		F9FAB46E228485A300255B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB43F2284762200255B77 /* Main.storyboard */; };
+		F9FAB4712284B33C00255B77 /* CountriesProviderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4702284B33C00255B77 /* CountriesProviderSpy.swift */; };
+		F9FAB4732284BA3A00255B77 /* DummyCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4722284BA3A00255B77 /* DummyCountry.swift */; };
+		F9FAB4792284C42300255B77 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB4782284C42300255B77 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,12 @@
 		F9FAB44C2284762400255B77 /* Daft CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daft CountriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daft_CountriesTests.swift; sourceTree = "<group>"; };
 		F9FAB4522284762400255B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FAB45E228476AE00255B77 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		F9FAB463228478A600255B77 /* CountriesProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesProviding.swift; sourceTree = "<group>"; };
+		F9FAB46722847AE600255B77 /* CountriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesProvider.swift; sourceTree = "<group>"; };
+		F9FAB4702284B33C00255B77 /* CountriesProviderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesProviderSpy.swift; sourceTree = "<group>"; };
+		F9FAB4722284BA3A00255B77 /* DummyCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCountry.swift; sourceTree = "<group>"; };
+		F9FAB4782284C42300255B77 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9BAF70C2285CA5200663E88 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB4702284B33C00255B77 /* CountriesProviderSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		F9BAF70D2285CA5E00663E88 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB4722284BA3A00255B77 /* DummyCountry.swift */,
+			);
+			path = Dummies;
+			sourceTree = "<group>";
+		};
 		F9FAB42F2284762200255B77 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +106,13 @@
 		F9FAB43A2284762200255B77 /* Daft Countries */ = {
 			isa = PBXGroup;
 			children = (
+				F9FAB46A22847CB200255B77 /* Custom */,
+				F9FAB4622284786300255B77 /* Provider */,
+				F9FAB4612284785900255B77 /* Providing */,
+				F9FAB45D2284764300255B77 /* Controller */,
+				F9FAB45C2284763900255B77 /* View */,
+				F9FAB45B2284762E00255B77 /* Model */,
 				F9FAB43B2284762200255B77 /* AppDelegate.swift */,
-				F9FAB43D2284762200255B77 /* ViewController.swift */,
-				F9FAB43F2284762200255B77 /* Main.storyboard */,
 				F9FAB4422284762400255B77 /* Assets.xcassets */,
 				F9FAB4442284762400255B77 /* LaunchScreen.storyboard */,
 				F9FAB4472284762400255B77 /* Info.plist */,
@@ -90,10 +123,60 @@
 		F9FAB44F2284762400255B77 /* Daft CountriesTests */ = {
 			isa = PBXGroup;
 			children = (
+				F9BAF70D2285CA5E00663E88 /* Dummies */,
+				F9BAF70C2285CA5200663E88 /* Spies */,
 				F9FAB4502284762400255B77 /* Daft_CountriesTests.swift */,
 				F9FAB4522284762400255B77 /* Info.plist */,
 			);
 			path = "Daft CountriesTests";
+			sourceTree = "<group>";
+		};
+		F9FAB45B2284762E00255B77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB45E228476AE00255B77 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9FAB45C2284763900255B77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB43F2284762200255B77 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9FAB45D2284764300255B77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB43D2284762200255B77 /* ViewController.swift */,
+				F9FAB4782284C42300255B77 /* DetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9FAB4612284785900255B77 /* Providing */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB463228478A600255B77 /* CountriesProviding.swift */,
+			);
+			path = Providing;
+			sourceTree = "<group>";
+		};
+		F9FAB4622284786300255B77 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB46722847AE600255B77 /* CountriesProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F9FAB46A22847CB200255B77 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FAB46E228485A300255B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FAB46822847AE600255B77 /* CountriesProvider.swift in Sources */,
 				F9FAB43E2284762200255B77 /* ViewController.swift in Sources */,
+				F9FAB464228478A600255B77 /* CountriesProviding.swift in Sources */,
+				F9FAB4792284C42300255B77 /* DetailsVC.swift in Sources */,
+				F9FAB45F228476AE00255B77 /* Country.swift in Sources */,
 				F9FAB43C2284762200255B77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FAB4712284B33C00255B77 /* CountriesProviderSpy.swift in Sources */,
+				F9FAB4732284BA3A00255B77 /* DummyCountry.swift in Sources */,
 				F9FAB4512284762400255B77 /* Daft_CountriesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
