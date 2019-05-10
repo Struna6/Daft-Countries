@@ -87,12 +87,6 @@ extension ViewController : UISearchBarDelegate{
             let range = data.range(of: searchText.lowercased(), options: NSString.CompareOptions.anchored)
             return range.location != NSNotFound
         }
-
-        if searchText.count == 0{
-            searching = false
-        }else{
-            searching = true
-        }
         tableView.reloadData()
     }
 }
