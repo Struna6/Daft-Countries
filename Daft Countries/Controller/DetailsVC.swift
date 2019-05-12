@@ -31,6 +31,11 @@ class DetailsVC: UIViewController {
                 let lon = country.latlng[1]
                 let locationToZoom = CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
                 zoomOnPlace(location: locationToZoom, area : country.area ?? 10000)
+            }else{
+                let alertController = UIAlertController(title: "Error", message: "Location data not provided", preferredStyle: .alert)
+                let OK = UIAlertAction(title: "OK", style: .default){_ in self.dismiss(animated: true, completion: nil)}
+                alertController.addAction(OK)
+                present(alertController, animated: true)
             }
         }
     }
@@ -39,8 +44,7 @@ class DetailsVC: UIViewController {
 extension DetailsVC : MKMapViewDelegate{
 
     func zoomOnPlace(location: CLLocationCoordinate2D, area : Double){
-
-        let meters = CLLocationDistance(exactly: sqrt(area) * 1000 * 2.0)!
+        let meters = CLLocationDistance(exactly: sqrt(area) * 1000 * 2.2)!
         let region = MKCoordinateRegion(center: location, latitudinalMeters: meters, longitudinalMeters: meters)
         mapView.setRegion(region,animated:true)
     }

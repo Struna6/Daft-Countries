@@ -15,14 +15,14 @@ class ViewController: UIViewController {
     var countriesSearched = [Country]()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    var searching = false
+    var searching : Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.searchBar.delegate = self
-
+        searching = false
         getCountries()
     }
 
@@ -60,6 +60,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         cell.textLabel?.text = searching ? countriesSearched[indexPath.row].name : countries[indexPath.row].name
         return cell
     }
+
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searching = true
+        tableView.reloadData()
+        searchBar.resignFirstResponder()
+    }
 }
 
 extension ViewController : UISearchBarDelegate{
@@ -67,26 +73,34 @@ extension ViewController : UISearchBarDelegate{
         searching = true
     }
 
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        searching = false
-    }
+//    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+//        searching = false
+//        tableView.reloadData()
+//    }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searching = true
+        tableView.reloadData()
         searchBar.endEditing(true)
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
+        tableView.reloadData()
         searchBar.endEditing(true)
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
-        countriesSearched = countries.filter(){
-            let data : NSString = $0.name.lowercased() as NSString
-            let range = data.range(of: searchText.lowercased(), options: NSString.CompareOptions.anchored)
-            return range.location != NSNotFound
+        if searchText.count > 0{
+            countriesSearched = countries.filter(){
+                let data : NSString = $0.name.lowercased() as NSString
+                let range = data.range(of: searchText.lowercased(), options: NSString.CompareOptions.anchored)
+                return range.location != NSNotFound
+            }
+        }else{
+            countriesSearched = countries
         }
+
         tableView.reloadData()
     }
 }
